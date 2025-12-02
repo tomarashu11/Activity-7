@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Agency</title>
+<style>
+  body { font-family: Arial; margin: 20px auto; max-width: 900px; }
+  header { text-align: center; padding: 15px 0; }
+  nav a { margin: 0 10px; text-decoration: none; color: #0077aa; }
+  h2 { margin-top: 25px; }
+  .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+  .gallery img { width: 200px; border-radius: 4px; }
+  .package { border: 1px solid #ddd; padding: 10px; margin: 10px 0; border-radius: 6px; }
+  form input, form textarea, form button { width: 100%; margin: 6px 0; padding: 6px; }
+  form button { background: #0077aa; color: white; border: none; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>WanderWorld Travel Agency</h1>
+  <p>Your Gateway to Incredible Journeys</p>
+  <nav>
+    <a href="#packages">Packages</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#tips">Travel Tips</a>
+    <a href="#booking">Book Now</a>
+  </nav>
+</header>
+
+<h2 id="packages">Tour Packages</h2>
+<div class="package">
+  <h3>Paris Getaway</h3>
+  <p>4 Nights • Eiffel Tower • Louvre Museum • Seine River Cruise</p>
+  <strong>₹65,000</strong>
+</div>
+<div class="package">
+  <h3>Maldives Escape</h3>
+  <p>3 Nights • Beach Villa • Water Sports • Sunset Dinner</p>
+  <strong>₹80,000</strong>
+</div>
+<div class="package">
+  <h3>Thailand Adventure</h3>
+  <p>5 Nights • Bangkok • Pattaya • Coral Island Tour</p>
+  <strong>₹50,000</strong>
+</div>
+
+<h2 id="gallery">Travel Destination Gallery</h2>
+<div class="gallery">
+  <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400" alt="Paris">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Maldives">
+  <img src="https://images.unsplash.com/photo-1505731132164-cca3c0c1e1e0?w=400" alt="Thailand">
+  <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=400" alt="Tokyo">
+</div>
+
+<h2 id="tips">Travel Tips</h2>
+<ul>
+  <li>Always carry digital copies of important documents.</li>
+  <li>Keep a universal charger and power bank.</li>
+  <li>Learn a few local phrases when traveling abroad.</li>
+  <li>Stay hydrated and pack light.</li>
+</ul>
+
+<h2 id="booking">Book Your Trip</h2>
+<form>
+  <label>Full Name</label>
+  <input type="text" required>
+
+  <label>Email</label>
+  <input type="email" required>
+
+  <label>Preferred Destination</label>
+  <input type="text" placeholder="Paris / Maldives / Thailand" required>
+
+  <label>Travel Date</label>
+  <input type="date" required>
+
+  <label>Message</label>
+  <textarea rows="4"></textarea>
+
+  <button type="submit">Book Now</button>
+</form>
+
+</body>
+</html>
